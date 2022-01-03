@@ -13,7 +13,7 @@ const app = express();
 // Connect DB
 mongoose
   .connect(
-    'mongodb+srv://ecembalta:29071995@cluster0.zctoi.mongodb.net/smartedu-db?retryWrites=true&w=majority'
+    'mongodb+srv://ecembalta:********@cluster0.zctoi.mongodb.net/smartedu-db?retryWrites=true&w=majority'
   )
   .then(() => {
     console.log('DB Connected Successfully');
@@ -37,7 +37,7 @@ app.use(
     saveUninitialized: true,
     store: MongoStore.create({
       mongoUrl:
-        'mongodb+srv://ecembalta:29071995@cluster0.zctoi.mongodb.net/smartedu-db?retryWrites=true&w=majority',
+        'mongodb+srv://ecembalta:********@cluster0.zctoi.mongodb.net/smartedu-db?retryWrites=true&w=majority',
     }),
   })
 );
